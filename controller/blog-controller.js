@@ -48,3 +48,17 @@ export const updateBlog = async (req, res) => {
     }
     return res.status(200).json({ blog });
 };
+
+export const getById = async (req, res) => {
+    const id = req.params.id;
+    let blog;
+    try {
+        blog = await Blog.findById(id);
+    } catch (error) {
+        return console.log(error);
+    }
+    if (!blog) {
+        return res.status(404).json({ message: "No blog found" });
+    }
+    return res.status(200).json({ blog });
+};
