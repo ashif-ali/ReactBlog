@@ -72,7 +72,7 @@ const BlogDetails = () => {
 
     const sendRequest = async () => {
         const response = await axios
-            .put(`https://react-blog-api-three.vercel.app//api/blog/update/${id}`, {
+            .put(`https://reactblog-pr8l.onrender.com/api/blog/update/${id}`, {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,
@@ -91,7 +91,7 @@ const BlogDetails = () => {
 
     useEffect(() => {
         const fetchDetails = async () => {
-            const response = await axios.get(`https://react-blog-api-three.vercel.app//api/blog/${id}`).catch((err) => {
+            const response = await axios.get(`https://reactblog-pr8l.onrender.com/api/blog/${id}`).catch((err) => {
                 console.error({ err });
             });
             const data = await response?.data;
