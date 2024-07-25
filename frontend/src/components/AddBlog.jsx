@@ -54,7 +54,7 @@ const AddBlog = () => {
 
     const sendRequest = async () => {
         const response = await axios
-            .post("https://react-blog-api-three.vercel.app/api/blog/add", {
+            .post("https://reactblog-pr8l.onrender.com/api/blog/add", {
                 title: inputs.title,
                 description: inputs.description,
                 image: inputs.image,
