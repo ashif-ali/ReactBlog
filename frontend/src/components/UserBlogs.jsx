@@ -10,7 +10,7 @@ const UserBlogs = () => {
     useEffect(() => {
         const sendRequest = async () => {
             const response = await axios
-                .get(`https://react-blog-api-three.vercel.app/api/blog/user/${userId}`)
+                .get(`https://reactblog-pr8l.onrender.com/api/blog/user/${userId}`)
                 .catch((error) => {
                     console.error({ error });
                 });
