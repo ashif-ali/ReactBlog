@@ -7,7 +7,7 @@ const Blogs = () => {
 
     const sendRequest = async () => {
         const response = await axios
-            .get("https://react-blog-api-three.vercel.app//api/blog")
+            .get("https://reactblog-pr8l.onrender.com/api/blog")
             .catch((error) => console.log({ error }));
         const data = await response?.data;
         return data;
