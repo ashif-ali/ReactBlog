@@ -23,7 +23,7 @@ const Auth = ({ isSignUp, setIsSignUp }) => {
 
     const sendRequest = async (type = "login") => {
         const res = await axios
-            .post(`https://react-blog-api-three.vercel.app/api/user/${type}`, {
+            .post(`https://reactblog-pr8l.onrender.com/api/user/${type}`, {
                 name: inputs.name,
                 email: inputs.email,
                 password: inputs.password,
