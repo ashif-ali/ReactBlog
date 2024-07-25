@@ -31,7 +31,7 @@ const Blog = ({ title, description, imageUrl, userName, isUser, id }) => {
 
     const deleteRequest = async () => {
         const response = await axios
-            .delete(`https://react-blog-api-three.vercel.app/api/blog/${id}`)
+            .delete(`https://reactblog-pr8l.onrender.com/api/blog/${id}`)
             .catch((error) => {
                 console.log({ error });
             });
